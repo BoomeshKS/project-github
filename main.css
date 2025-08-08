@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.box p{
+    font-size: 70px;
+}
+
+.btn{
+    padding: 10px 60px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transition: 2s;
+    background-color: red;
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-color: aqua;
+    }
+    50%{
+        background-color: green;
+    }
+    100%{
+        background-color: red;
+    }
+}
+
+.about::before{
+    content: " Page";
+}
+
+.box1{
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    position: absolute;
+    margin-top: -60px;
+    z-index: 1;
+}
+.box2{
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+    position: absolute;
+    z-index: 0;
+}
+
